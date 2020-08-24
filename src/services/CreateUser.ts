@@ -8,7 +8,7 @@ interface CreateUserData {
     password: string
 }
 
-export default function createUser( { name = '', email, password }: CreateUserData) {
+export default function createUser( { name, email, password }: CreateUserData) {
     const user = {
         name,
         email,
